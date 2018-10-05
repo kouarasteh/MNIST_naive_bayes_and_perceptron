@@ -32,18 +32,18 @@ classify the provided test digit data. Our learning rate was set to .01 and perf
 
 # Parameter Tuning | Perceptron
 
-# Bias
+## Bias
 We introduced our Perceptron to a bias of +1 and we noticed a significant decrease in both training and
 testing accuracy. Before adding a +1 bias, our Perceptron was performing classifications with about 89%
 accuracy (in testing, not training). After adding a bias of +1, our classification accuracy dropped to around 65%
 in testing.
 
-# Zero-Filled Initial Weight Matrix vs. Random Initial Weight Matrix
+## Zero-Filled Initial Weight Matrix vs. Random Initial Weight Matrix
 We ran our Perceptron with an empty weight matrix and a random weight matrix and we noticed that an
 empty initial weight matrix performed significantly better with an average performance increase of about
 4-5% in training and 5-6% in testing.
 
-# Number of Epochs
+## Number of Epochs
 We noticed that an epoch parameter of ~20 was ideal to prove convergence, given a learning rate of .001. We
 tried as many as 200 epochs, and no significant improvement in accuracy was seen beyond 20 epochs. With a
 faster learning rate, we needed less epochs, and with a slower learning rate, we needed more epochs.
