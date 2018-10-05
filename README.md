@@ -10,12 +10,15 @@ classifier by iterating through each cell in the 32x32 matrix and incrementing t
 matrices for each class in accordance with the given probability equation. Upon iterating through all the 32x32
 matrices, we are finished with training our model and proceed to test. Given these calculated pixel
 probabilities, we can calculate the priors, MAP rule, and test.
+![Confusion Matrix Naive Bayes](confmat.png)
 We then begin testing using another instance of Digit_Data_IO class to parse the testing data samples and
 begin MAP classification. We then use the math library to perform the log of the MAP classification quantity to
 avoid underflow. Our default hyperparameters included randomized start values, no bias, and a Laplace
 smoothing value of 0.01.
-
-![Alt text](confmat.png)
+![Alt text](0_1.png)
+![Alt text](2_3_4.png)
+![Alt text](5_6_7.png)
+![Alt text](8_9.png)
 # Perceptron Implementation
 
 Our Perceptron Classifier used the same Digit_Data_IO to read in the text files. We used an array of
