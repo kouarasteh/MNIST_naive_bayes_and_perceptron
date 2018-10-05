@@ -15,7 +15,7 @@ begin MAP classification. We then use the math library to perform the log of the
 avoid underflow. Our default hyperparameters included randomized start values, no bias, and a Laplace
 smoothing value of 0.01.
 
-![Alt text](mp3/confmat.png)
+![Alt text](confmat.png)
 # Perceptron Implementation
 
 Our Perceptron Classifier used the same Digit_Data_IO to read in the text files. We used an array of
