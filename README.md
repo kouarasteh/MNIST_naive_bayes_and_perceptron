@@ -1,7 +1,7 @@
 # MNIST Classifier 
 
 # Naive Bayes Implementation
-
+![Confusion Matrix Naive Bayes](confmat.png)
 Our implementation for the Naïve Bayes Classifier was structurally intuitive using primarily python 2d lists and
 separate functions for training, testing, and several for formatted printing. We had a Digit_Data_IO class that
 parses through the digit data provided for training and testing and feeds it into our train (and test) functions in
@@ -10,17 +10,17 @@ classifier by iterating through each cell in the 32x32 matrix and incrementing t
 matrices for each class in accordance with the given probability equation. Upon iterating through all the 32x32
 matrices, we are finished with training our model and proceed to test. Given these calculated pixel
 probabilities, we can calculate the priors, MAP rule, and test.
-![Confusion Matrix Naive Bayes](confmat.png)
-We then begin testing using another instance of Digit_Data_IO class to parse the testing data samples and
-begin MAP classification. We then use the math library to perform the log of the MAP classification quantity to
-avoid underflow. Our default hyperparameters included randomized start values, no bias, and a Laplace
-smoothing value of 0.01.
 ![Alt text](0_1.png)
 ![Alt text](2_3_4.png)
 ![Alt text](5_6_7.png)
 ![Alt text](8_9.png)
+We then begin testing using another instance of Digit_Data_IO class to parse the testing data samples and
+begin MAP classification. We then use the math library to perform the log of the MAP classification quantity to
+avoid underflow. Our default hyperparameters included randomized start values, no bias, and a Laplace
+smoothing value of 0.01.
+![Odds Ratios Naive Bayes](odds_ratios.png)
 # Perceptron Implementation
-
+![Alt text](confmat_p.png)
 Our Perceptron Classifier used the same Digit_Data_IO to read in the text files. We used an array of
 randomly generated weight matrices, a learning rate, and another array of sums to represent our 10
 perceptrons. We trained our Perceptron by taking in every input, multiplying it by the weight for that given
